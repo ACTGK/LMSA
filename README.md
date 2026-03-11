@@ -7,30 +7,19 @@ This repository contains the official **PyTorch implementation** of the paper:
 
 We propose a novel **Learnable Multi-Scale Attention (LMSA)** module and a **Multi-Task Learning (MTL)** framework to enhance vessel connectivity and segmentation accuracy in fundus imaging.
 **LMSA Architecture (UNet + LMSA + MTL)**  
-![Architecture](images/net.jpg)
 
-**LMSA Architecture (Module Design)** 
-![LMSA](images/lmsa.jpg)
 
 
 ## 1. Repository Structure
 
     LMSA_TMI_Official
-    ├── .gitignore
-    ├── images
-    │   ├── Impact_of_lmsa.drawio.png
-    │   ├── LMSA.drawio.png
-    │   ├── ROC.png
-    │   ├── unet_lmsa_mtl.png
-    │   └── redlesion1.drawio.png
     ├── codes
     │   ├── attunet_train.py
     │   ├── cs2net_train.py
     │   └── unet_train.py.py
     ├── requirements.txt
     └── utils
-        ├── organise_datasets.py
-        └── statistical_significance.py
+        └── organise_datasets.py
 
 ***
 
@@ -44,7 +33,7 @@ pip install -r requirements.txt
 
 ### 2.2 Automated Dataset Preparation
 
-To ensure training scripts is stand alone so Got to the respective and download raw dataset files of DRIVE, CHASE_DB1 and STARE
+To ensure training scripts is stand alone so Got to the respective dataset links and download raw dataset files of DRIVE, CHASE_DB1 and STARE
 Place raw downloads into a folder named `data`, then run:
 
 ```bash
@@ -67,7 +56,7 @@ This script:
 ***
 ## 3. Reproducing Paper Experiments
 
-### 📊 **Architecture Generalization (Table III)**
+### 📊 **Architecture Generalization (Table V)**
 
 To reproduce the cross-model benchmarks for all 8 backbones, execute the respective scripts from the root directory:
 
@@ -81,7 +70,7 @@ python3 `codes/attunet_train.py`
 python3 `codes/cs2net_train.py`
 ***
 
-### 📊 **Main Ablation Study (Table VII)**
+### 📊 **Main Ablation Study (Table VI)**
 
 Modify config settings at the top of `codes/unet_train.py`.  
 Official evidence archived in `RESULTS/Ablation_study/`.
@@ -95,26 +84,12 @@ Official evidence archived in `RESULTS/Ablation_study/`.
 
 ***
 
-### 📊 **Scale Sensitivity Analysis (Table VIII)**
+### 📊 **Scale Sensitivity Analysis (Table VII)**
 
 Adjust `LMSA_K` (number of scales) in training scripts.  
-## 4. Results
 
-- **Performance Impact**  
-  ![Performance Impact](images/Impact_of_lmsa_sr.jpg)
 
-- **ROC Curves**  
-  ![ROC Curves](images/ROC_AUC_Enhanced_Zoom 1.png)
-
-- **Complex situvation**  
-  ![Complex situvation](images/Complex_situvation.jpg)
-
-- **Pathological Robustness**  
-  ![Pathological Robustness](images/redlesion1.jpg)
-
-***
-
-## 5. Technical References & Acknowledgments
+## 4. Technical References & Acknowledgments
 *   **CS2-Net**: <https://github.com/moucheng/CS2-Net>
 *   **Attention U-Net**: <https://github.com/ozan-oktay/Attention-Gated-Networks>
 *   **U-Net**: <https://github.com/milesial/Pytorch-UNet>
@@ -122,7 +97,7 @@ Adjust `LMSA_K` (number of scales) in training scripts.
 ***
 
 
-## 6. Contact
+## 5. Contact
 
 For technical queries, bug reports, or reproducibility issues:
 
