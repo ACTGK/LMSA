@@ -31,22 +31,7 @@ We propose a novel **Learnable Multi-Scale Attention (LMSA)** module and a **Mul
 pip install -r requirements.txt
 ```
 
-### 2.2 Automated Dataset Preparation
-
-To ensure training scripts is stand alone so Got to the respective dataset links and download raw dataset files of DRIVE, CHASE_DB1 and STARE
-Place raw downloads into a folder named `data`, then run:
-
-```bash
-python utils/organise_datasets.py
-```
-This script:
-
-*   Decompresses raw files
-*   Standardizes all images to `.png`
-*   Generates required Train/Test splits
-
-
-### 2.3 Expected Output Structure:
+### 2.2 Expected Data Structure:
 
     DATASETS
     ├── DRIVE_dataset
