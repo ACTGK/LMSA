@@ -1,0 +1,23 @@
+##Read me
+
+# Dataset Information
+
+This folder contains organized copies and/or references to the public datasets used in this study.  
+All datasets belong to their respective original owners and providers. We gratefully acknowledge the creators and maintainers of these resources.
+
+## Datasets
+
+### STARE
+- Original public source: http://cecas.clemson.edu/~ahoover/stare/
+- Repository path: `data/Stare`
+
+### DRIVE
+- Original public source: https://www.kaggle.com/datasets/zionfuo/drive2004/data
+- Repository path: `data/Drive`
+
+### CHASE_DB1
+- Original public source: https://researchinnovation.kingston.ac.uk/en/datasets/chasedb1-retinal-vessel-reference-dataset-4/
+- Repository path: `data/CHASEDB1`
+
+## Note
+Please refer to the original dataset sources for official access, licensing terms, and citation requirements.
